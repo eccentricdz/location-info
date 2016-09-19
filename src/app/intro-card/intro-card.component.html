@@ -1,9 +1,9 @@
   <div class="intro-card">
-    <div class="intro-card-left-col">
-      <div class="primary-name">{{introCardInfo.primaryName}}</div>
-      <div class="formatted_address">{{introCardInfo.formattedAddress}}</div>
+    <div class="intro-card-col" id="intro-card-left-col">
+      <div class="card-header header">{{introCardInfo.primaryName}}</div>
+      <div class="formatted_address text-secondary">{{introCardInfo.formattedAddress}}</div>
     </div>
-    <div class="intro-card-right-col">
-      <div class="locatiom-data">Lat: {{introCardInfo.latitude}} | Lon: {{introCardInfo.longitude}}</div>
+    <div class="intro-card-col" id="intro-card-right-col">
+      <div class="locatiom-data text-secondary">Lat: {{introCardInfo.latitude}} | Lon: {{introCardInfo.longitude}}</div>
     </div>
   </div>

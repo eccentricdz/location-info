@@ -10,6 +10,12 @@ export class LocationInfoProviderService {
 
   constructor(@Inject(Http) public http:Http) { }
 
+
+  roundToNDecimalPlaces(x:number, n:number) {
+    const divider = 10*n;
+    return (Math.round(x*divider)/divider);
+  }
+
   getIntroCardInfo(query:string){
     let requestUrl:string = "http://maps.googleapis.com/maps/api/geocode/json?address="+query+"&sensor=true";
     if (query && query!="") { 
@@ -20,8 +26,8 @@ export class LocationInfoProviderService {
           let firstResultSet = mapData.results[0];
           let locationData = firstResultSet.geometry.location;
           googleMapResult.formattedAddress = firstResultSet.formatted_address;
-          googleMapResult.latitude = locationData.lat;
-          googleMapResult.longitude = locationData.lng;
+          googleMapResult.latitude = this.roundToNDecimalPlaces(locationData.lat,2);
+          googleMapResult.longitude = this.roundToNDecimalPlaces(locationData.lng,2);
           googleMapResult.primaryName = firstResultSet.address_components[0].long_name;
           return googleMapResult;
         },
@@ -32,5 +38,4 @@ export class LocationInfoProviderService {
       return googleMapResult;
     }
   }
-
 }

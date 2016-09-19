@@ -4,8 +4,6 @@
     margin: 200px auto 0;
 }
 
-.locinfo-header {
+#locinfo-header {
     font-size: 64px;
-    color: #565656;
-    font-weight: 700;
 }

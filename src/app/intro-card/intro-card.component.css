@@ -1,0 +1,23 @@
+.intro-card {
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #FCFCFC 100%);
+    border: 1px solid #DBDBDB;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.intro-card-col {
+    width:50%;
+    float: left;
+    padding: 10px;
+}
+
+#intro-card-right-col {
+    text-align: right;
+}
+
+#intro-card-left-col {
+    text-align: left;
+}

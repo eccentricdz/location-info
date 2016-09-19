@@ -1,4 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F3F3F3;
     font-family: 'Roboto', sans-serif;
+    color: #565656;
+}
+
+.text-secondary {
+    color: #9b9b9b;
+    font-size: 0.9em;
+}
+
+.card-header {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.header {
+    color: #565656;
+    font-weight: 700;
 }
