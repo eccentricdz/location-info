@@ -1,0 +1,2 @@
+<input type="text" [(ngModel)]="query" id="locinfo-search-box" required (keyup.enter)="getLocationInformation()" placeholder="Enter the name of a place"/>
+<loc-intro-card *ngIf="resultsFound" [introCardInfo]="introCardInfo"></loc-intro-card>

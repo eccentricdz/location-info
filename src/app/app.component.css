@@ -1,0 +1,11 @@
+#locinfo-app-container {
+    width: 85%;
+    max-width: 600px;
+    margin: 200px auto 0;
+}
+
+.locinfo-header {
+    font-size: 64px;
+    color: #565656;
+    font-weight: 700;
+}
