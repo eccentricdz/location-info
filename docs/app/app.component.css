@@ -1,7 +1,9 @@
 #locinfo-app-container {
     width: 85%;
     max-width: 600px;
-    margin: 200px auto 0;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
 }
 
 #locinfo-header {
